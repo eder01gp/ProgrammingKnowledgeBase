@@ -1,0 +1,5 @@
+<!--Sirve para rodear los elementos mientras programamos.--!>
+* {
+    border: 1px dashed red;
+    min-height: 10px;
+}
