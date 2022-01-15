@@ -3,3 +3,15 @@
     border: 1px dashed red;
     min-height: 10px;
 }
+
+<!--En html se utiliza el atributo id. Ej: <h1 id="id01">--!>
+#id01 {
+    }
+
+<!--En html se utiliza el atributo class. Ej: <h1 class="class01">--!>
+.class01 {
+    }
+
+<!--No hay referencia escrita en el html. En css escribimos el tag al que queramos aplicar las propiedades. Ej: h1, h2, p, li...--!>
+tag {
+    }
