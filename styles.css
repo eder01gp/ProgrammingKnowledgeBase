@@ -15,3 +15,15 @@
 <!--No hay referencia escrita en el html. En css escribimos el tag al que queramos aplicar las propiedades. Ej: h1, h2, p, li...--!>
 tag {
     }
+
+
+<!--CSS Attribute Selectors--!>
+<!--No hay referencia escrita en el html. Cuando es input, podemos aplicar solo a algunos types: --!>
+
+input[type=text] {
+  width: 100%;
+}
+
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields
