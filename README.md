@@ -1,1 +1,1 @@
-# Templates ans cheatsheets
+# Templates and cheatsheets
