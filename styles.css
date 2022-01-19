@@ -4,26 +4,56 @@
     min-height: 10px;
 }
 
-<!--En html se utiliza el atributo id. Ej: <h1 id="id01">--!>
+<!--https://www.w3schools.com/cssref/css_selectors.asp
+    https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+    .class1.class2	.name1.name2    (Y)
+    .class1 .class2	.name1 .name2   (descendiente)
+    element,element	div, p          (AND)
+    element element	div p           (INSIDE)
+    element>element	div > p         (PARENT)
+    element+element	div + p         (FIRST)
+    element1~element2	p ~ ul      (PRECEDED BY)
+    
+    
+    --!>
+    
+<!--En html se utiliza el atributo id. 100 puntos Ej: <h1 id="id01">--!>
 #id01 {
     }
 
-<!--En html se utiliza el atributo class. Ej: <h1 class="class01">--!>
+<!--En html se utiliza el atributo class. 10 puntos Ej: <h1 class="class01">--!>
 .class01 {
     }
 
-<!--No hay referencia escrita en el html. En css escribimos el tag al que queramos aplicar las propiedades. Ej: h1, h2, p, li...--!>
+<!--No hay referencia escrita en el html. 1 punto En css escribimos el tag al que queramos aplicar las propiedades. Ej: h1, h2, p, li...--!>
 tag {
     }
 
 
 <!--CSS Attribute Selectors--!>
-<!--No hay referencia escrita en el html. Cuando es input, podemos aplicar solo a algunos types: --!>
+<!--No hay referencia escrita en el html. Podemos especificar más utilizando los atributos. Ej. El tag input, pero solo con tipo texto: --!>
 
 input[type=text] {
   width: 100%;
 }
 
-input[type=text] - will only select text fields
-input[type=password] - will only select password fields
-input[type=number] - will only select number fields
+<!--Tambien podemos utilizar * para indicar que contenga una palabra y contiene de cualquier otra forma.EJ. seleccionará divs: section01, section02, qqsection11,--!>
+
+div[id*='section'] {
+    color: red;
+}
+
+<!--Pseudo-class selectors--!>
+a:link{color: green;}
+a:visited{color: yellow;}
+a:hover{color: blue;}
+a:active{color: red;}
+
+
+/*PAGINA CENTRADA*/ 
+.center-me {
+  margin: 0 auto;
+  width: 200px;  /*This should be the max-widh of your website*/ 
+}
+
