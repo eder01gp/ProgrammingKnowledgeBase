@@ -1,0 +1,8 @@
+Aunque parezca increible, cuando separamos los <div> con una linea aparte en el código. Ocupa algo de espacio y no encajan al 100% en la página.
+
+Esto es 101%
+<div></div>
+<div></div>
+
+Esto es 100%
+<div></div><div></div>
