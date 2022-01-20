@@ -1,0 +1,3 @@
+Variables: let y const - pueden ser "block" scope. var no puede ser.
+Block scope: es cuando va entre brackets {  (pero no es una función).
+
