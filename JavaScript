@@ -1,3 +1,127 @@
 Variables: let y const - pueden ser "block" scope. var no puede ser.
 Block scope: es cuando va entre brackets {  (pero no es una función).
 
+FUNCIONES:
+hello = function() {  return "Hello World!"; }
+hello = () =>      {  return "Hello World!"; }
+hello = () => "Hello World!";
+hello = (val) => "Hello " + val;
+hello = val => "Hello " + val;
+
+console.log("Sum = " + sum); //console
+document.write(x); //website
+parseInt() // trasnformar en type number
+prompt(); // pedir info en pantalla
+typeof(); // tipo de variable
+Math.random(); // random float
+x.toLowerCase(); // pasar a minusculas
+
+
+OBJETOS:
+// Para crear una propiedad nueva, simplemente asignarla un valor:
+    if (car ["model"] == undefined) car ["model"] = "Volvo";
+
+
+FOR:
+for (let i=mySampleArray.length; i>-1; i--)
+{
+    console.log(mySampleArray[i]);
+}
+
+
+ FOR IN:
+
+ var dog = {
+  species: "Great Dane",
+  size: "Extra Large",
+  age: 3 ,
+  name: "Rocky"
+}
+
+for(items in dog){
+  console.log(dog[items]);
+}
+
+//Otro ejemplo:
+var myArray = [3423,5,4,47889,654,8,867543,23,48,56432,55,23,25,12];
+    for (var index in myArray) {
+    console.log(myArray[index]);
+}
+//this prints the value of the item in the position index
+
+// SWITCH CASEE
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+    text = "Soon it is Weekend";
+    break;
+  case 0:
+  case 6:
+    text = "It is Weekend";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+
+INLINE CONDITIONS:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+ARRAYS
+var Newarr = []; / crearla
+array.lenght / variable que sabe la longitud del array
+
+// Para meter nuevos valores al final de la lista: PUSH
+    var myArray = ['Pedro','Juan','Maria'];
+    myArray.push('Chris');
+    console.log(myArray); //this will print ['Pedro','Juan','Maria','Chris'];
+    
+// Para quitar el último valor: POP
+    var myArray = ['Pedro','Chris','Juan','Maria'];
+    myArray.pop();
+    console.log(myArray); //this will print ['Pedro','Chris','Juan'];
+    
+// Para meter nuevos valores al principio de la lista. UNSHIFT
+    var myArray = ['Juan','Maria'];
+    myArray.unshift('Pedro');
+    myArray.unshift('Chris','Bob');
+    console.log(myArray); //this will print ['Chris','Bob','Pedro','Juan','Maria']; 
+
+// Para quitar valores del principio de la lista. SHIFT 
+    var myArray = ['Chris','Bob','Pedro','Juan','Maria'];
+    myArray.shift();
+    console.log(myArray); //this will print ['Bob','Pedro','Juan','Maria'];
+
+
+// Prestame un cacho de array. DEJA 2 y dame hasta el 4. (No se afecta el array)
+    var x = [14, 3,3245,234,52,345,3,45,23, 77];
+    console.log(x.slice(2, 4));
+
+// Dame un cacho de array. DEJA 2 y dame 4 elementos. (Se acorta el array)
+    var y = [14, 3,3245,234,52,345,3,45,23, 77];
+    console.log(y.splice(2, 4));
+    console.log(y);
+    
+// Dame un cacho de array e inserta elementos ahí:
+    var y = [14, 3, 3245, 234, 52, 345, 3, 45, 23, 77];
+    y.splice(2,4,'a');  //returns [3245, 234, 52, 345] 
+    console.log(y); // [14, 3, 'a', 3, 45, 23, 77]
+
+// No me des nada e inserta elementos ahí:
+    var y = [14, 3, 3245, 234, 52, 345, 3, 45, 23, 77];
+    y.splice(2,0,'a');  //returns [] 
+    console.log(y); // [14, 3, 'a', 3245, 234, 52, 345, 3, 45, 23, 77]
+    
+//  array.sort(); ordenar de A-Z
+    array.reverse(); ordenar de Z-A
+    
+    HIGHER-ORDER FUNCTION:
+array.forEach(function(currentValue, index, arr)    {   } ); // Loopear array
+array.forEach(        (currentValue, index, arr) => {   } ); // Loopear array, shorter way
+array.filter(function(currentValue, index, arr)    {   } );  // Quitar valores que no cumplan la condicion que pongamos en el return de la función.
+array.filter(         (currentValue, index, arr) => { return currentValue>index } ); // ejemplo. recuerda: las condiciones se ponen en el return.
+array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro de sort una función que dependiendo de si el resultado es < o > 0 va ordenadondo los elementos por pares): 
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return a – b});
+    console.log(points); //[ 1, 5, 10, 25, 40, 100 ]
+
+
