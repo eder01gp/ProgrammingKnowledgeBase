@@ -114,7 +114,11 @@ array.lenght / variable que sabe la longitud del array
 //  array.sort(); ordenar de A-Z
     array.reverse(); ordenar de Z-A
     
-    HIGHER-ORDER FUNCTION:
+    HIGHER-ORDER FUNCTION 
+// Sin valores prestablecidos en la función que creemos:
+array.map(function(){}); // pasa todos los valores del array por la función establecida    
+    
+// (La función que va dentro ya tiene unos parametros prestablecidos.)
 array.forEach(function(currentValue, index, arr)    {   } ); // Loopear array
 array.forEach(        (currentValue, index, arr) => {   } ); // Loopear array, shorter way
 array.filter(function(currentValue, index, arr)    {   } );  // Quitar valores que no cumplan la condicion que pongamos en el return de la función.
@@ -123,5 +127,13 @@ array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro 
     var points = [40, 100, 1, 5, 25, 10];
     points.sort(function(a, b){return a – b});
     console.log(points); //[ 1, 5, 10, 25, 40, 100 ]
+
+    
+    LOOPEAR ARRAYS CON FOR:
+for (var index in myArray){
+    console.log(myArray[index]);
+}
+
+
 
 
