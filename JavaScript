@@ -8,13 +8,14 @@ hello = () => "Hello World!";
 hello = (val) => "Hello " + val;
 hello = val => "Hello " + val;
 
-console.log("Sum = " + sum); //console
-document.write(x); //website
+console.log("Sum = " + sum); // console
+document.write(x); // website
 parseInt() // trasnformar en type number
 prompt(); // pedir info en pantalla
 typeof(); // tipo de variable
 Math.random(); // random float
-x.toLowerCase(); // pasar a minusculas
+string.toLowerCase(); // pasar a minusculas
+string.includes(); // 
 
 
 OBJETOS:
@@ -122,9 +123,9 @@ array.map(function(){}); // pasa todos los valores del array por la función est
 array.forEach(function(currentValue, index, arr)    {   } ); // Loopear array
 array.forEach(        (currentValue, index, arr) => {   } ); // Loopear array, shorter way
 
-array.filter(function(currentValue, index, arr)     { return                    } );  // Deja los valores que cumplan la condicion que pongamos en el return de la función.
-array.filter(         (currentValue, index, arr) => { return currentValue>index } ); // ejemplo. recuerda: las condiciones se ponen en el return.
-array.filter(         (currentValue, index, arr) => currentValue>index            ); // Si no ponemos corchetes, ya entiende que es el return.
+array.filter(function(currentValue, index, arr)     { return currentValue>index; } );  // Deja los valores que cumplan la condicion que pongamos en el return de la función.
+array.filter(         (currentValue, index, arr) => { return currentValue>index; } ); // ejemplo. recuerda: las condiciones se ponen en el return.
+array.filter(         (currentValue, index, arr) => currentValue>index            ); // Si no ponemos corchetes (ni ";"), ya entiende que es el return.
 
 array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro de sort una función que dependiendo de si el resultado es < o > 0 va ordenadondo los elementos por pares): 
     var points = [40, 100, 1, 5, 25, 10];
