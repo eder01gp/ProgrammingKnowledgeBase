@@ -22,6 +22,22 @@ OBJETOS:
 // Para crear una propiedad nueva, simplemente asignarla un valor:
     if (car ["model"] == undefined) car ["model"] = "Volvo";
 
+var person = {
+    name: "John",                    //String
+    lastname: "Doe",
+    age: 35,                         //Number
+    gender: "male",
+    lucky_numbers: [ 7, 11, 13, 17], //Array
+    significant_other: person2       //Object, yes the same variable/object defined after
+};
+
+var family = {
+    lastname: "Doe",
+    members: [person, person2]       //Array de objetos
+};
+
+console.log(family.members[0].name);
+
 
 FOR:
 for (let i=mySampleArray.length; i>-1; i--)
