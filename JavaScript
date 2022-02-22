@@ -10,17 +10,30 @@ hello = val => "Hello " + val;
 
 console.log("Sum = " + sum); // console
 document.write(x); // website
-parseInt() // trasnformar en type number
+parseInt() // transformar en type number
 prompt(); // pedir info en pantalla
 typeof(); // tipo de variable
 Math.random(); // random float
+Math.pow(x,y); // x elevado a la y
+Math.sqrt(x); // raiz cuadrada de x
+% // resto de división entre enteros
 string.toLowerCase(); // pasar a minusculas
 string.includes(); // 
+string.length(); //
+
 
 
 OBJETOS:
 // Para crear una propiedad nueva, simplemente asignarla un valor:
     if (car ["model"] == undefined) car ["model"] = "Volvo";
+
+// Para sacar valores:
+
+    person.name
+    person ["name"]
+    
+// Para borrar propiedades:
+    delete person.name;
 
 var person = {
     name: "John",                    //String
@@ -109,11 +122,11 @@ array.lenght / variable que sabe la longitud del array
     console.log(myArray); //this will print ['Bob','Pedro','Juan','Maria'];
 
 
-// Prestame un cacho de array. DEJA 2 y dame hasta el 4. (No se afecta el array)
+// Prestame un cacho de array. DEJA 2 y dame hasta el 4. (No se afecta el array). SLICE
     var x = [14, 3,3245,234,52,345,3,45,23, 77];
     console.log(x.slice(2, 4));
 
-// Dame un cacho de array. DEJA 2 y dame 4 elementos. (Se acorta el array)
+// Dame un cacho de array. DEJA 2 y dame 4 elementos. (Se acorta el array). SPLICE
     var y = [14, 3,3245,234,52,345,3,45,23, 77];
     console.log(y.splice(2, 4));
     console.log(y);
@@ -127,6 +140,9 @@ array.lenght / variable que sabe la longitud del array
     var y = [14, 3, 3245, 234, 52, 345, 3, 45, 23, 77];
     y.splice(2,0,'a');  //returns [] 
     console.log(y); // [14, 3, 'a', 3245, 234, 52, 345, 3, 45, 23, 77]
+    
+// Para concatenar dos arrays. CONCAT
+    arr1.concat(arr2);
     
 //  array.sort(); ordenar de A-Z
     array.reverse(); ordenar de Z-A
