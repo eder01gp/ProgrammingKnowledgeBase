@@ -20,6 +20,7 @@ Math.sqrt(x); // raiz cuadrada de x
 string.toLowerCase(); // pasar a minusculas
 string.includes(); // 
 string.length(); //
+string.split(" "); // devuelve array de elementos que estan separados por " ".
 
 
 
@@ -131,12 +132,12 @@ array.lenght / variable que sabe la longitud del array
     console.log(y.splice(2, 4));
     console.log(y);
     
-// Dame un cacho de array e inserta elementos ahí:
+// Dame un cacho de array e inserta elementos ahí: SPLICE
     var y = [14, 3, 3245, 234, 52, 345, 3, 45, 23, 77];
     y.splice(2,4,'a');  //returns [3245, 234, 52, 345] 
     console.log(y); // [14, 3, 'a', 3, 45, 23, 77]
 
-// No me des nada e inserta elementos ahí:
+// No me des nada e inserta elementos ahí: SPLICE
     var y = [14, 3, 3245, 234, 52, 345, 3, 45, 23, 77];
     y.splice(2,0,'a');  //returns [] 
     console.log(y); // [14, 3, 'a', 3245, 234, 52, 345, 3, 45, 23, 77]
