@@ -17,6 +17,7 @@ Math.random(); // random float
 Math.pow(x,y); // x elevado a la y
 Math.sqrt(x); // raiz cuadrada de x
 % // resto de división entre enteros
+!(x < 5 && x < 10) // da la vuelta al resultado
 string.toLowerCase(); // pasar a minusculas
 string.includes(); // 
 string.length(); //
@@ -31,7 +32,10 @@ OBJETOS:
 // Para sacar valores:
 
     person.name
-    person ["name"]
+    person["name"]
+    
+    console.log(family.members[0].name); // Ejemplo abajo
+    console.log(family["members"][0]["name"]); // Ejemplo abajo
     
 // Para borrar propiedades:
     delete person.name;
@@ -50,8 +54,6 @@ var family = {
     members: [person, person2]       //Array de objetos
 };
 
-console.log(family.members[0].name);
-
 
 FOR:
 for (let i=mySampleArray.length; i>-1; i--)
@@ -60,7 +62,7 @@ for (let i=mySampleArray.length; i>-1; i--)
 }
 
 
- FOR IN:
+ FOR IN [utilizar la forma de denominar dog[items]; dog.items NO funciona.
 
  var dog = {
   species: "Great Dane",
@@ -100,6 +102,9 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditi
 ARRAYS
 var Newarr = []; / crearla
 array.lenght / variable que sabe la longitud del array
+
+// Para duplicar array
+arr2 = [...arr1];
 
 // Para meter nuevos valores al final de la lista: PUSH
     var myArray = ['Pedro','Juan','Maria'];
@@ -147,6 +152,9 @@ array.lenght / variable que sabe la longitud del array
     
 //  array.sort(); ordenar de A-Z
     array.reverse(); ordenar de Z-A
+    
+// Para convertir de array a string. JOIN
+    array.join(" "); // hace un string con el separador indicado entre paréntesis
     
     HIGHER-ORDER FUNCTION 
 // Sin valores prestablecidos en la función que creemos:
