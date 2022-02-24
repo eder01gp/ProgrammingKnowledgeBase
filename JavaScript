@@ -10,9 +10,12 @@ hello = val => "Hello " + val;
 
 console.log("Sum = " + sum); // console
 document.write(x); // website
-parseInt() // transformar en type number
 prompt(); // pedir info en pantalla
 typeof(); // tipo de variable
+x.toString(); // convertir a string
+Number(x); // convertir en numero
+parseInt(x) // convertir en numero int
+isNaN(x); // para saber si un valor is Not A Number
 Math.random(); // random float
 Math.pow(x,y); // x elevado a la y
 Math.sqrt(x); // raiz cuadrada de x
@@ -62,7 +65,7 @@ for (let i=mySampleArray.length; i>-1; i--)
 }
 
 
- FOR IN [utilizar la forma de denominar dog[items]; dog.items NO funciona.
+ FOR IN |funciona con objetos, arrays y strings
 
  var dog = {
   species: "Great Dane",
