@@ -30,10 +30,11 @@ string.split(" "); // devuelve array de elementos que estan separados por " ".
 
 OBJETOS:
 // Para crear una propiedad nueva, simplemente asignarla un valor:
-    if (car ["model"] == undefined) car ["model"] = "Volvo";
+    if (person ["age"] == undefined) person ["age"] = 35;
 
 // Para sacar properties:
     Object.keys(person);
+    Object.values(person); 
     
 // Para sacar property values:
 
@@ -68,7 +69,8 @@ for (let i=mySampleArray.length; i>-1; i--)
 }
 
 
- FOR IN |funciona con objetos, arrays y strings
+ FOR IN | funciona con objetos, arrays y strings (No utilizar en arrays donde el orden es importante)
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 
  var dog = {
   species: "Great Dane",
