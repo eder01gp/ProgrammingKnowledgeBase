@@ -32,7 +32,10 @@ OBJETOS:
 // Para crear una propiedad nueva, simplemente asignarla un valor:
     if (car ["model"] == undefined) car ["model"] = "Volvo";
 
-// Para sacar valores:
+// Para sacar properties:
+    Object.keys(person);
+    
+// Para sacar property values:
 
     person.name
     person["name"]
