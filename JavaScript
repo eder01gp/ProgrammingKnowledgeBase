@@ -17,12 +17,13 @@ Number(x); // convertir en numero
 parseInt(x) // convertir en numero int
 isNaN(x); // para saber si un valor is Not A Number
 Math.random(); // random float
+Math.floor(); // redondear valor
 Math.pow(x,y); // x elevado a la y
 Math.sqrt(x); // raiz cuadrada de x
 % // resto de división entre enteros
 !(x < 5 && x < 10) // da la vuelta al resultado
 string.toLowerCase(); // pasar a minusculas
-string.includes(); // 
+string.includes(x); // comprobar si existe (x) en un string
 string.length(); //
 string.split(" "); // devuelve array de elementos que estan separados por " ".
 
@@ -164,6 +165,8 @@ arr2 = [...arr1];
 // Para convertir de array a string. JOIN
     array.join(" "); // hace un string con el separador indicado entre paréntesis
     
+
+    
     HIGHER-ORDER FUNCTION 
 // Sin valores prestablecidos en la función que creemos:
     
@@ -181,6 +184,8 @@ array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro 
     var points = [40, 100, 1, 5, 25, 10];
     points.sort(function(a, b){return a – b});
     console.log(points); //[ 1, 5, 10, 25, 40, 100 ]
+    
+array.findIndex(function(currentValue, index, arr) { return currentValue>index; } ); // devuelve el index del valor que se ajusta a la función.
 
     
     LOOPEAR ARRAYS CON FOR:
