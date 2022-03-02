@@ -7,10 +7,10 @@
 <!--https://www.w3schools.com/cssref/css_selectors.asp
     https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
 
-    .class1.class2	.name1.name2    (Y)
-    .class1 .class2	.name1 .name2   (descendiente)
-    element,element	div, p          (AND)
-    element element	div p           (INSIDE)
+Diferentes formas de llamar a los elementos:
+
+    element,element	div, p          (AND)                         EJ: .class1.class2	.name1.name2 
+    element element	div p           (INSIDE (descendiente))       EJ: .class1 .class2	.name1 .name2
     element>element	div > p         (PARENT)
     element+element	div + p         (FIRST)
     element1~element2	p ~ ul      (PRECEDED BY)
@@ -18,11 +18,11 @@
     
     --!>
     
-<!--En html se utiliza el atributo id. 100 puntos Ej: <h1 id="id01">--!>
+<!--En html se utiliza el atributo id="id01". 100 puntos Ej: <h1 id="id01">--!>
 #id01 {
     }
 
-<!--En html se utiliza el atributo class. 10 puntos Ej: <h1 class="class01">--!>
+<!--En html se utiliza el atributo class="class01". 10 puntos Ej: <h1 class="class01">--!>
 .class01 {
     }
 
@@ -30,19 +30,19 @@
 tag {
     }
 
+    Podemos especificar más utilizando los atributos:
+    <!--CSS Attribute Selectors--!>
+    <!--No hay referencia escrita en el html.  Ej. El tag input, pero solo con tipo texto: --!>
 
-<!--CSS Attribute Selectors--!>
-<!--No hay referencia escrita en el html. Podemos especificar más utilizando los atributos. Ej. El tag input, pero solo con tipo texto: --!>
+    input[type=text] {
+      width: 100%;
+    }
 
-input[type=text] {
-  width: 100%;
-}
+    <!--Tambien podemos utilizar * para indicar que contenga una palabra.EJ. seleccionará divs: section01, section02, qqsection11,--!>
 
-<!--Tambien podemos utilizar * para indicar que contenga una palabra y contiene de cualquier otra forma.EJ. seleccionará divs: section01, section02, qqsection11,--!>
-
-div[id*='section'] {
-    color: red;
-}
+    div[id*='section'] {
+        color: red;
+    }
 
 <!--Pseudo-class selectors--!>
 a:link{color: green;}
