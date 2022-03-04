@@ -60,3 +60,11 @@ a:active{color: red;}
   width: 200px;  /*This should be the max-widh of your website*/ 
 }
 
+///////
+PARA UTILIZAR ICONOS con FONTAWESOME:
+incluir en el head del html:
+		<script src="https://kit.fontawesome.com/78d2a11ad0.js" crossorigin="anonymous"></script>
+incluir en el css el link encontrado en al web:
+        https://fontawesome.com/icons
+
+
