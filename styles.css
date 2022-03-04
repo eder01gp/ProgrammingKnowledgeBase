@@ -19,7 +19,8 @@ Diferentes formas de llamar a los elementos:
     --!>
     JERARQUIAS de MAS ESPECIFICO a MENOS ESPECIFICO
 
-<!--Escribir un codigo <style> en el html es lo más específico posible pero es una práctica NO recomendada.   
+<!--Escribir un codigo style en el html es lo más específico posible pero es una práctica NO recomendada.  
+	<a href="google.com" style="color: red; font-size: 14px;">Go to google</a>
     
 <!--En html se utiliza el atributo id="id01". 100 puntos Ej: <h1 id="id01">--!>
 #id01 {
