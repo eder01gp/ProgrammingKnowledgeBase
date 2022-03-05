@@ -1,5 +1,12 @@
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
+//shorcut:
+h1.class + tab -> <h1 class="display"></h1>
+
+//tips:
+<h1>,<h2>...<h6> pueden ser utilizados como clases tambien. Ej <h1 class="h6"></h1>
+
+//how it works:
 This is a row: <div class="row">
 This is a column: <div class="col–sm–x"> 
   col = columna
