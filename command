@@ -52,6 +52,12 @@ nano path/to/the/textfile.txt
 #open a text editor to start editing the content of textfile.txt 
 #if textfile.txt does not exists it will create it!
 
+echo hello world #print on the console
+pwd #shows the current directory
+echo* #shows the files on the current directory
+cat *.txt #shows the content of the file you choose
+
+
 // Shorcuts
 To cancel a command that is being executed, press Control+C
 To autocomplete a file or folder name, use the tab key.
