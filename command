@@ -1,3 +1,8 @@
+//GITPOD
+Para compilar y ver el resultado en browser:
+$ pip3 install flask && python3 server.py
+
+//CMD
 The list command
 ls -l ./applications
 #show the files and folder inside "appications" 
