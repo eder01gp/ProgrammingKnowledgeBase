@@ -62,6 +62,15 @@ pwd #shows the current directory
 echo* #shows the files on the current directory
 cat *.txt #shows the content of the file you choose
 
+Print the last 5 lines of "access.log".
+tail -5 *
+
+Create an empty file named take-the-command-challenge in the current working directory.
+>take-the-command-challenge
+
+Create a directory named tmp/files in the current working directory
+Hint: The directory "tmp/" doesn't exist, with one command you need to create both "tmp/" and "tmp/files"
+mkdir -p tmp/files
 
 // Shorcuts
 To cancel a command that is being executed, press Control+C
