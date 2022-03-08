@@ -2,8 +2,11 @@
 Para compilar y ver el resultado en browser:
 $ pip3 install flask && python3 server.py
 
+proyecto -> (add) Stage -> (commit) commit
+
+git remote -v / ver remotos creados
 git init / iniciar carpeta git para el proyecto
-git add file.txt / para añadir archivo al git y que sea trackeado
+git add file.txt / para añadir un archivo al stage
 git add "*.txt" / in order to add all the text tiles that have been added or edited in our repository.
 git status / para saber el status del git
 git commit -m "Added a new file" / guardar cambios
