@@ -2,6 +2,25 @@
 Para compilar y ver el resultado en browser:
 $ pip3 install flask && python3 server.py
 
+git init / iniciar carpeta git para el proyecto
+git add file.txt / para añadir archivo al git y que sea trackeado
+git add "*.txt" / in order to add all the text tiles that have been added or edited in our repository.
+git status / para saber el status del git
+git commit -m "Added a new file" / guardar cambios
+git reset / devuelve a la posicion anterior del commit
+git log / para ver el log de commits realizados
+git remote add origin https://github.com/4geeksAcademy/project.git / conectar nuestro git a un repositorio remoto
+git push -u origin master / para enviar los archivos al repositorio remoto. (Master es la carpeta creada por defecto en el repositorio)
+git pull origin master / para recibir los archivos del reposiorio remoto. ((origin) es el remote repository and (master) the name of the local branch where that will get updated .
+git diff HEAD / obtener los cambios realizados (HEAD es el ultimo commit).
+git checkout "monthly_meetings.txt" / revertir los cambios
+git branch my_version / create new branch (copy of the project) with name my_version
+git checkout my_version / cambiar de branch
+git commit -a -m "Reorganized project" / incluyendo "-a" hace commit directo de todos los archivos modificados
+git merge my_version / mergear los cambios del commit
+git branch -d my_version / delete old branches
+git push / para enviar todo el proyecto al repositorio remoto
+
 //CMD
 The list command
 ls -l ./applications
