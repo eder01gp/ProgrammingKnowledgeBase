@@ -1,2 +1,3 @@
 # Templates and cheatsheets
-cnt+alt+A
+Visual estudio
+ctrl+alt+A / comment
