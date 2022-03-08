@@ -5,6 +5,7 @@ $ pip3 install flask && python3 server.py
 proyecto -> (add) Stage -> (commit) commit
 
 git remote -v / ver remotos creados
+git remote remove origin / borrar remoto origen
 git init / iniciar carpeta git para el proyecto
 git add file.txt / para añadir un archivo al stage
 git add "*.txt" / in order to add all the text tiles that have been added or edited in our repository.
@@ -23,6 +24,9 @@ git commit -a -m "Reorganized project" / incluyendo "-a" hace commit directo de 
 git merge my_version / mergear los cambios del commit
 git branch -d my_version / delete old branches
 git push / para enviar todo el proyecto al repositorio remoto
+
+Note: The git push -u command is equivalent to -set-upstream. The -u flag is used to set origin as the upstream remote in your git config. As you push a branch successfully or up to date it, it adds upstream reference.
+As you push local branch with git push -u option, that local branch is linked with the remote branch automatically. The advantage is, you may use git pull without any arguments.
 
 //CMD
 The list command
