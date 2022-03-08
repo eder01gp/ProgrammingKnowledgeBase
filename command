@@ -4,6 +4,8 @@ $ pip3 install flask && python3 server.py
 
 proyecto -> (add) Stage -> (commit) commit
 
+git fetch / traer todo el proyecto a lo bruto
+git checkout -b develop / crear branch
 git remote -v / ver remotos creados
 git remote remove origin / borrar remoto origen
 git init / iniciar carpeta git para el proyecto
