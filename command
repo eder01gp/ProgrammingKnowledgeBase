@@ -4,28 +4,28 @@ $ pip3 install flask && python3 server.py
 
 proyecto -> (add) Stage -> (commit) commit
 
-git fetch / traer todo el proyecto a lo bruto
-git checkout -b develop / crear branch
-git remote -v / ver remotos creados
-git remote remove origin / borrar remoto origen
 git init / iniciar carpeta git para el proyecto
+git status / para saber el status del git
 git add file.txt / para añadir un archivo al stage
 git add "*.txt" / in order to add all the text tiles that have been added or edited in our repository.
-git status / para saber el status del git
-git commit -m "Added a new file" / guardar cambios
-git reset / devuelve a la posicion anterior del commit
-git log / para ver el log de commits realizados
+git commit -m "Added a new file" / guardar cambios (la -m es para dejar un mensaje)
+  git reset / devuelve a la posicion anterior del commit
+  git log / para ver el log de commits realizados
+  git commit -a -m "Reorganized project" / incluyendo "-a" hace commit directo de todos los archivos modificados
 git remote add origin https://github.com/4geeksAcademy/project.git / conectar nuestro git a un repositorio remoto
-git push -u origin master / para enviar los archivos al repositorio remoto. (Master es la carpeta creada por defecto en el repositorio)
+git push -u origin master / para enviar los archivos al repositorio remoto. (Master es la carpeta creada por defecto en el repositorio) (la -u se explica abajo)
+  git push / para enviar todo el proyecto al repositorio remoto
 git pull origin master / para recibir los archivos del reposiorio remoto. ((origin) es el remote repository and (master) the name of the local branch where that will get updated .
+git fetch / traer todo el proyecto a lo bruto
 git diff HEAD / obtener los cambios realizados (HEAD es el ultimo commit).
 git checkout "monthly_meetings.txt" / revertir los cambios
+git checkout -b develop / crear branch
 git branch my_version / create new branch (copy of the project) with name my_version
 git checkout my_version / cambiar de branch
-git commit -a -m "Reorganized project" / incluyendo "-a" hace commit directo de todos los archivos modificados
-git merge my_version / mergear los cambios del commit
 git branch -d my_version / delete old branches
-git push / para enviar todo el proyecto al repositorio remoto
+git merge my_version / mergear los cambios del commit
+git remote -v / ver remotos creados
+git remote remove origin / borrar remoto origen
 
 Note: The git push -u command is equivalent to -set-upstream. The -u flag is used to set origin as the upstream remote in your git config. As you push a branch successfully or up to date it, it adds upstream reference.
 As you push local branch with git push -u option, that local branch is linked with the remote branch automatically. The advantage is, you may use git pull without any arguments.
