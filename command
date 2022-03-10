@@ -1,6 +1,7 @@
 //GITPOD
 Para compilar y ver el resultado en browser:
 $ pip3 install flask && python3 server.py
+& python -m http.server 8000
 
 proyecto -> (add) Stage -> (commit) commit
 
