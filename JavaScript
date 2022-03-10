@@ -1,6 +1,11 @@
 Variables: let y const - pueden ser "block" scope. var no puede ser.
 Block scope: es cuando va entre brackets {  (pero no es una función).
 
+vanilla JS
+replit.com
+consola solo muestra tipo string
+interpolacion string ' string ${nostring} ' -> esto es comilla simple
+
 FUNCIONES:
 hello = function() {  return "Hello World!"; }
 hello = () =>      {  return "Hello World!"; }
