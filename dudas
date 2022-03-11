@@ -1,2 +1,5 @@
 1. cambiar el tamaño de los iconos de fontawesome. 
-2. cambiar el color de los nav-tab pills en bootstrap
+2. cambiar el color de los nav-tab pills en bootstrap.
+
+Hay que declarar las funciones como variables?
+Y las "i" dentro de los loops?
