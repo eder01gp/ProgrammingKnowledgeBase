@@ -2,9 +2,8 @@ Variables: let y const - pueden ser "block" scope. var no puede ser.
 Block scope: es cuando va entre brackets {  (pero no es una función).
 
 vanilla JS
-replit.com
-consola solo muestra tipo string
-interpolacion string: `string ${nostring}` -> esto son comillas invertidas 
+la consola solo muestra tipo string. Por ello tenemos que hacer:
+interpolacion string para mostar el valor de variables: `string ${nostring}` -> esto son comillas invertidas 
 
 FUNCIONES:
 hello = function() {  return "Hello World!"; }
