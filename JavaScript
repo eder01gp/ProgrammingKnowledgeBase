@@ -13,6 +13,10 @@ hello = () => "Hello World!";
 hello = (val) => "Hello " + val;
 hello = val => "Hello " + val;
 
+Funcion anónima:
+function (param1, param2) { return param1 * param2; }
+
+
 console.log("Sum = " + sum); // console
 document.write(x); // website
 prompt(); // pedir info en pantalla
@@ -185,6 +189,7 @@ array.filter(         (currentValue, index, arr) => currentValue>index          
 
 array.map(function(currentValue, index, arr){}); // pasa todos los valores del array por la función establecida    
 
+array.sort(); // Ordena strings de A a Z.
 array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro de sort una función que dependiendo de si el resultado es < o > 0 va ordenadondo los elementos por pares): 
     var points = [40, 100, 1, 5, 25, 10];
     points.sort(function(a, b){return a – b});
