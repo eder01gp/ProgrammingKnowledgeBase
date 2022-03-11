@@ -4,7 +4,7 @@ Block scope: es cuando va entre brackets {  (pero no es una función).
 vanilla JS
 replit.com
 consola solo muestra tipo string
-interpolacion string ' string ${nostring} ' -> esto es comilla simple
+interpolacion string: `string ${nostring}` -> esto son comillas invertidas 
 
 FUNCIONES:
 hello = function() {  return "Hello World!"; }
