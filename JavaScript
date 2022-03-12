@@ -1,6 +1,12 @@
 Variables: let y const - pueden ser "block" scope. var no puede ser.
 Block scope: es cuando va entre brackets {  (pero no es una función).
 
+scrip:src al final del body
+
+Entre funcion array y normal, cambio el block scope. arrow necesita una variable. Y antes de imprimir hay que definirla.
+for in, posiciones del array
+for of, valores del array
+
 vanilla JS
 la consola solo muestra tipo string. Por ello tenemos que hacer:
 interpolacion string para mostar el valor de variables: `string ${nostring}` -> esto son comillas invertidas 
