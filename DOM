@@ -20,7 +20,8 @@ Returns an array with all the elements that have name="name_value" in the name p
         .createTextNode(" "); // Ej1
         .appendChild( );      // Ej1
         .insertBefore(element, elementbelow); //Ej2
-        .childNodes   // Ej 2
+        .childNodes   // Ej2
+        .removeChild(); // Ej3
         
 Ejemplo 1:        
 var divElem = document.getElementById("myFirstDiv");
@@ -35,6 +36,13 @@ var textnode = document.createTextNode("Water");
 newItem.appendChild(textnode);
 var list = document.getElementById("myList");
 list.insertBefore(newItem, list.childNodes[0]);  //adding the newItem before the FIRST child of the list.
+
+Ejemplo 3:
+// Removing all children from an element  
+var element = document.getElementById("myFirstUL");
+while (element.firstChild) {
+    element.removeChild(element.firstChild);
+}
 
 
 //Acces childs
