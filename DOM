@@ -13,5 +13,29 @@ Returns an array with all the instances representing each paragraph element in t
 document.getElementsByName("name_value")
 Returns an array with all the elements that have name="name_value" in the name property of their HTML tag in the HTML document.
 
+        .style.color = "red";
+        .style.background = "red";
+        .innerHTML = " ";
+        .createElement(" ");  // Ej1
+        .createTextNode(" "); // Ej1
+        .appendChild( );      // Ej1
+        .insertBefore(element, elementbelow); //Ej2
+        .childNodes   // Ej 2
+        
+Ejemplo 1:        
+var divElem = document.getElementById("myFirstDiv");
+var myNewHOne = document.createElement("h1");
+var t = document.createTextNode("Hello World");
+myNewHOne.appendChild(t);  //This adds the text content to the h1  
+divElem.appendChild(myNewHOne); //This adds the h1 into the original element
+
+Ejemplo 2:
+var newItem = document.createElement("li");
+var textnode = document.createTextNode("Water");
+newItem.appendChild(textnode);
+var list = document.getElementById("myList");
+list.insertBefore(newItem, list.childNodes[0]);  //adding the newItem before the FIRST child of the list.
+
+
 //Acces childs
 element.child
