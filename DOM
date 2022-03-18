@@ -23,6 +23,9 @@ Returns an array with all the elements that have name="name_value" in the name p
         .insertBefore(element, elementbelow); //Ej2
         .childNodes   // Ej2
         .removeChild(); // Ej3
+       
+//Acces childs
+element.child
         
 Ejemplo 1:        
 var divElem = document.getElementById("myFirstDiv");
@@ -45,6 +48,67 @@ while (element.firstChild) {
     element.removeChild(element.firstChild);
 }
 
+Ejemplo 4: // Listener onclick on the html
+        <button onclick="myClickHandler();">Click me</button>
+ 
+<script>
+function myClickHandler(){
+    alert(‘hello’);
+}
+</script>
 
-//Acces childs
-element.child
+Ejemplo 5: // Add event listeners:
+let LIs = document.querySelectorAll("li");
+LIs.forEach(LI => LI.addEventListener('click', (e)=>{
+	LI.parentNode.removeChild(LI);
+}));
+
+EJemplo 6: // Event 
+function myEventHandler(eventObj)
+{
+    console.log(eventObj.target);
+     //will print on the console the DOM element that triggered the event  
+    console.log(eventObj.type);
+     //will print on the console the type of event  
+    console.log(eventObj.cancelable);
+     //will print on the console true or false if the event can have its default action prevented
+    eventObj.preventDefault();
+     //will prevent the default action of the event if allowed
+    eventObj.stopPropagation();
+     //will prevent propagation of the event if allowed
+     
+}
+
+Ejemplo 7: // Onchange
+<input type="text" onchange="myChangeHandler(event)" /> 
+ 
+<script>
+const myChangeHandler = (e) => {
+    console.log(e.target.value);
+     // Will print on the console whatever the user types into the input field 
+}
+</script>
+
+
+Ejemplo 7 BIS // 
+
+index.html:
+
+     <input type="text" />
+index.js:
+
+     //index.js file:
+     const myChangeHandler = (e) => {
+          console.log(e.target.value);
+     }
+
+     document.querySelector("input").addEventListener('change', myChangeHandler);
+    
+Ejemplo 8 // Remove listener
+var listenerFunction = function(){
+    alert("First click");
+    document.getElementById("onTimeButton").removeEventListener("click",listenerFunction);
+}
+function inicialize(){
+    document.getElementById("onTimeButton").addEventListener("click",listenerFunction);
+}
