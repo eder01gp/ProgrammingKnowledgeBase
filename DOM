@@ -15,6 +15,7 @@ Returns an array with all the elements that have name="name_value" in the name p
 
         .style.color = "red";
         .style.background = "red";
+        .attribute = "whatever";
         .innerHTML = " ";
         .createElement(" ");  // Ej1
         .createTextNode(" "); // Ej1
