@@ -43,7 +43,9 @@ newItem.appendChild(textnode);
 var list = document.getElementById("myList");
 list.insertBefore(newItem, list.childNodes[0]);  //adding the newItem before the FIRST child of the list.
 
-Ejemplo 3:
+Ejemplo 3: // Removing
+// element.remove();
+
 // Removing a children from an element:
 let element = document.querySelector("#secondElement");
     element.parentNode.removeChild(element);
