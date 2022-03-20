@@ -25,17 +25,18 @@ Returns an array with all the elements that have name="name_value" in the name p
         .childNodes   // Ej2
         .removeChild(); // Ej3
        
-//Acces childs
-element.child
+//Acces childs and parent
+element.childNodes // array
+element.parentNode // string
         
-Ejemplo 1:        
+Ejemplo 1: // create element        
 var divElem = document.getElementById("myFirstDiv");
 var myNewHOne = document.createElement("h1");
 var t = document.createTextNode("Hello World");
 myNewHOne.appendChild(t);  //This adds the text content to the h1  
 divElem.appendChild(myNewHOne); //This adds the h1 into the original element
 
-Ejemplo 2:
+Ejemplo 2: // create element 
 var newItem = document.createElement("li");
 var textnode = document.createTextNode("Water");
 newItem.appendChild(textnode);
@@ -52,8 +53,6 @@ var element = document.getElementById("myFirstUL");
 while (element.firstChild) {
     element.removeChild(element.firstChild);
 }
-
-
 
 Ejemplo 4: // Listener onclick on the html
         <button onclick="myClickHandler();">Click me</button>
