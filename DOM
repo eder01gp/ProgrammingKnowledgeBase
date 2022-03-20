@@ -15,6 +15,7 @@ Returns an array with all the elements that have name="name_value" in the name p
 
         .style.color = "red";
         .style.background = "red";
+		...and much more... https://www.w3schools.com/jsref/dom_obj_style.asp
         .attribute = "whatever";
         .innerHTML = " ";
         .createElement(" ");  // Ej1
