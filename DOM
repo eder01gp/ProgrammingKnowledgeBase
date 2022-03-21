@@ -1,13 +1,15 @@
 document.querySelector("css-element-selector") // element
 Returns an instance of the first element found that fits the CSS selector that you specified.
 
+document.querySelectorAll("css-element-selector") // array -> se puede hacer foreach
+
 document.getElementById("elementId") // element
 Returns an instance of the element with the id="elementId" in the HTML document.
 
 document.getElementsByClassName("exampleClass") // array
 Returns an array of all elements with the class="exampleClass" in their HTML tag property.
 
-document.getElementsByTagName("p") // array
+document.getElementsByTagName("p") // array -> No se puede hacer foreach
 Returns an array with all the instances representing each paragraph element in the HTML document.
 
 document.getElementsByName("name_value") // array
