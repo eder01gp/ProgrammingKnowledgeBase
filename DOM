@@ -1,16 +1,16 @@
-document.querySelector("css-element-selector")
+document.querySelector("css-element-selector") // element
 Returns an instance of the first element found that fits the CSS selector that you specified.
 
-document.getElementById("elementId")
+document.getElementById("elementId") // element
 Returns an instance of the element with the id="elementId" in the HTML document.
 
-document.getElementsByClassName("exampleClass")
+document.getElementsByClassName("exampleClass") // array
 Returns an array of all elements with the class="exampleClass" in their HTML tag property.
 
-document.getElementsByTagName("p")
+document.getElementsByTagName("p") // array
 Returns an array with all the instances representing each paragraph element in the HTML document.
 
-document.getElementsByName("name_value")
+document.getElementsByName("name_value") // array
 Returns an array with all the elements that have name="name_value" in the name property of their HTML tag in the HTML document.
 
         .style.color = "red";
