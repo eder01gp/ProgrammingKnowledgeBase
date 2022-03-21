@@ -18,6 +18,7 @@ Returns an array with all the elements that have name="name_value" in the name p
 		...and much more... https://www.w3schools.com/jsref/dom_obj_style.asp
         .attribute = "whatever";
         .innerHTML = " ";
+	.write(" ");
         .createElement(" ");  // Ej1
         .createTextNode(" "); // Ej1
         .appendChild( );      // Ej1
