@@ -25,6 +25,7 @@ Returns an array with all the elements that have name="name_value" in the name p
         .insertBefore(element, elementbelow); //Ej2
         .childNodes   // Ej2
         .removeChild(); // Ej3
+	.addEventListener('change', function(){}); // Ej7. Utilizar siempre una funcion. Si esta ya definida se pone sin los paréntesis: funcion. NO funcion()
        
 //Acces childs and parent
 element.childNodes // array
