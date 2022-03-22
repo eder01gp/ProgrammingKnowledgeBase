@@ -28,6 +28,9 @@ Returns an array with all the elements that have name="name_value" in the name p
         .childNodes   // Ej2
         .removeChild(); // Ej3
 	.addEventListener('change', function(){}); // Ej7. Utilizar siempre una funcion. Si esta ya definida se pone sin los paréntesis: funcion. NO funcion()
+	
+	En el html:
+	<button onclick="myClickFunction();">Click me</button>
        
 //Acces childs and parent
 element.childNodes // array
