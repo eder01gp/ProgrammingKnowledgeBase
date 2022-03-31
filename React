@@ -1,2 +1,40 @@
 export desfault
 entre llaves o no al importar
+diferencias entre entre js y jsx: corregir className...;
+
+---------------------------------------------------------
+
+
+(Como usar ReactDOM.render)
+// WHAT: This variable returns contains the html to render
+let output = <span>James is 12 years old</span>;
+
+// WHERE: A DOM element that will contain the entire react generated html
+const myDiv = document.querySelector("#myDiv");
+
+//what   //where
+ReactDOM.render(output, myDiv);
+
+
+(Como usar { })
+// if we have a variable
+let age = "12";
+let name = "John";
+
+// we can use it in our html like this
+let output = <span>James is {age} years old</span>;
+
+// use react-dom to render it
+ReactDOM.render(output, document.querySelector("#myDiv"));
+
+(Como usar matrices)
+const namesInHTML = [
+  <li>Bob Dust</li>,
+  <li>Fredy Mercury</li>,
+  <li>Shazam Nikola</li>,
+  <li>Wilibin Walabam</li>
+];
+
+const content = <ul>{namesInHTML}</ul>;
+
+ReactDOM.render(content, document.querySelector("#myDiv"));
