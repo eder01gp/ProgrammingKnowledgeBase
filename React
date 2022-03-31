@@ -44,3 +44,13 @@ ReactDOM.render(content, document.querySelector("#myDiv"));
 const animalsInHTML = animals.map((singleAnimal, i) => {
 	return <li key={i}>{singleAnimal.label}</li>;
 });
+
+
+***(como llamar a las funciones de html)
+// if we declare a function called MyFunction
+const MyFunction = () => {
+    return <h1>I Love React</h1>;
+}
+
+// we can call the function as an HTML tag like this:
+<MyFunction />
