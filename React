@@ -5,7 +5,7 @@ diferencias entre entre js y jsx: corregir className...;
 ---------------------------------------------------------
 
 
-(Como usar ReactDOM.render)
+***(Como usar ReactDOM.render)
 // WHAT: This variable returns contains the html to render
 let output = <span>James is 12 years old</span>;
 
@@ -16,18 +16,18 @@ const myDiv = document.querySelector("#myDiv");
 ReactDOM.render(output, myDiv);
 
 
-(Como usar { })
-// if we have a variable
+***(Como usar { })
+  // if we have a variable
 let age = "12";
 let name = "John";
 
-// we can use it in our html like this
+  // we can use it in our html like this
 let output = <span>James is {age} years old</span>;
 
-// use react-dom to render it
+  // use react-dom to render it
 ReactDOM.render(output, document.querySelector("#myDiv"));
 
-(Como usar matrices)
+***(Como usar matrices)
 const namesInHTML = [
   <li>Bob Dust</li>,
   <li>Fredy Mercury</li>,
@@ -38,3 +38,8 @@ const namesInHTML = [
 const content = <ul>{namesInHTML}</ul>;
 
 ReactDOM.render(content, document.querySelector("#myDiv"));
+
+***(poner key en los lis) --> porque --> https://adhithiravi.medium.com/why-do-i-need-keys-in-react-lists-dbb522188bbb
+const animalsInHTML = animals.map((singleAnimal, i) => {
+	return <li key={i}>{singleAnimal.label}</li>;
+});
