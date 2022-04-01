@@ -1,7 +1,11 @@
 1- React component - Capital Letter
 2- export desfault
 entre llaves o no al importar
-3 - diferencias entre entre js y jsx: corregir className, cerrar los tags que solo tienen una (<img/>);
+3 - diferencias entre entre js y jsx: corregir className, cerrar los tags que solo tienen una (<img/>):
+    sketch:type TO sketchType
+    xmlns:xlink TO xmlnsXlink
+    xlink:href  TO xlinkHref
+style={{color: "red"}}
 
 ---------------------------------------------------------
 
