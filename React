@@ -64,3 +64,7 @@ Element.propTypes = {
 	title: PropType.string
 		// 2) add here the new properties into the proptypes object
 };
+
+------
+***Cambiar valores dentro del elemento
+// <input onchange={(elemento) => {setMail(elemento.target.value}}>...
