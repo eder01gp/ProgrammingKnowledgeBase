@@ -39,10 +39,11 @@ const namesInHTML = [
   <li>Shazam Nikola</li>,
   <li>Wilibin Walabam</li>
 ];
-
 const content = <ul>{namesInHTML}</ul>;
-
 ReactDOM.render(content, document.querySelector("#myDiv"));
+
+***introducir valor en matriz
+setUsers([...users,{nuevoUser}])
 
 ***(poner key en los lis) --> porque --> https://adhithiravi.medium.com/why-do-i-need-keys-in-react-lists-dbb522188bbb
 const animalsInHTML = animals.map((singleAnimal, i) => {
