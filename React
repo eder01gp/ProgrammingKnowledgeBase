@@ -69,3 +69,14 @@ Element.propTypes = {
 ------
 ***Cambiar valores dentro del elemento
 // <input onchange={(elemento) => {setMail(elemento.target.value}}>...
+
+------
+***Flux
+getActions().functionAction(); // usar Actions dentro de Actions
+setStore(); // setear el valor de una variable
+getStore().variable // utilizar una variable dentro de un Action
+setStore({variable: valor})
+
+import React, { useContext } from "react";
+import { Context } from "../store/appContext";
+const { store, actions } = useContext(Context);
