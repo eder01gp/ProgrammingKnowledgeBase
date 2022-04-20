@@ -80,3 +80,7 @@ setStore({variable: valor})
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 const { store, actions } = useContext(Context);
+
+----
+***Render condicional. Si se cumple la condición pinta
+{variableBooleana && () }
