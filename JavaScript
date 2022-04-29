@@ -125,6 +125,8 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditi
 ARRAYS
 var Newarr = []; / crearla
 array.lenght / variable que sabe la longitud del array
+array.indexOf(searchElement[, fromIndex])
+
 
 // Para duplicar array
 arr2 = [...arr1];
@@ -201,6 +203,7 @@ array.sort(function(a, b){return a – b}); // Ordenar numeros. (Metemos dentro 
     console.log(points); //[ 1, 5, 10, 25, 40, 100 ]
     
 array.findIndex(function(currentValue, index, arr) { return currentValue>index; } ); // devuelve el index del valor que se ajusta a la función.
+
 
     
     LOOPEAR ARRAYS CON FOR:
