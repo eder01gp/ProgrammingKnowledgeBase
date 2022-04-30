@@ -1,7 +1,44 @@
-tabla.query.all()
-tabla.query.get(1)
-tabla.query.filter_by(id=userId).first()
-tabla.query(tabla.id==userId)
+@app.route('/user/<int:user_id>/favorite/person/<int:char_id>', methods=['POST', 'GET'])
 
-db.session.add( )
+body = request.get_json() # get the request body content
+if request.method == 'POST':
+
+List_serial = list(map(lambda e: e.serialize(),List))
+
+tabla.query.all()
+tabla.query.get(id) # busca por la primary key
+tabla.query.filter_by(id=userId).first() # para match exactos
+tabla.query.filter(tabla.id==userId) # más versatil
+
+db.session.add(Tabla(User="Eder", Name="Gutierrez")
 db.session.commit( )
+
+db.session.delete(person)
+db.session.commit()
+
+person = Person.query.get(3)
+person.name = "Bob" #actualizar
+db.session.commit()
+
+return jsonify(objeto), codigo respuesta
+
+db.session.rollback()
+db.session.begin_nested()
+
+
+-----------------------------
+MODELS
+-----------------------------
+class Person(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+
+    def __repr__(self):
+        return '<Person %r>' % self.username
+
+    def serialize(self):
+        return {
+            "username": self.username,
+            "email": self.email
+        }
