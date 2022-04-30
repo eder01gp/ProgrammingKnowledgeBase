@@ -1,0 +1,7 @@
+tabla.query.all()
+tabla.query.get(1)
+tabla.query.filter_by(id=userId).first()
+tabla.query(tabla.id==userId)
+
+db.session.add( )
+db.session.commit( )
