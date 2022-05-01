@@ -28,6 +28,7 @@ prompt(); // pedir info en pantalla
 typeof(); // tipo de variable
 x.toString(); // convertir a string
 Number(x); // convertir en numero
+Number.toFixed(6); // muestra 6 posiciones decimales del numero
 parseInt(x) // convertir en numero int
 isNaN(x); // para saber si un valor is Not A Number
 Math.random(); // random float
