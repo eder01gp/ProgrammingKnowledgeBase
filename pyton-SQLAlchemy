@@ -1,6 +1,7 @@
 @app.route('/user/<int:user_id>/favorite/person/<int:char_id>', methods=['POST', 'GET'])
 
 body = request.get_json() # get the request body content
+body_name = request.json.get("name")
 if request.method == 'POST':
 
 List_serial = list(map(lambda e: e.serialize(),List))
