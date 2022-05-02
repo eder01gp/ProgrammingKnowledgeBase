@@ -82,6 +82,9 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 const { store, actions } = useContext(Context);
 
+	store.variable // usar la variable en cualquier parte del programa (menos flux)
+	actions.funcion // usar las acciones en cualquier parte del programa (menos flux)
+	
 ----
 ***Render condicional. Si se cumple la condición pinta
 {variableBooleana && () }
