@@ -8,6 +8,8 @@ entre llaves o no al importar
     for 	HtmlFor	[une labels o outputs con un input]
 style={{color: "red"}}
 
+
+setTimeot(()=>{}, 2000)
 ---------------------------------------------------------
 
 
