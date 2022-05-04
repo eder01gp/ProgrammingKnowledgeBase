@@ -42,7 +42,17 @@ string.includes(x); // comprobar si existe (x) en un string
 string.length(); //
 string.split(" "); // devuelve array de elementos que estan separados por " ".
 
+Regex ////
+var regex = /[abc]def/; // [abc]: debe contener alguno // "def": debe contener toda la expresion // evalua caracteres consecutivos
+var str1= "adef";
+output = regex.test(str1); // return True
 
+let re = new RegExp('ab+c'); //  Usa la función constructora cuando sepas que el patrón de la expresión regular cambiará, o no conoces el patrón y lo obtienes de otra fuente, como la entrada del usuario.
+
+/[a-z]def/ rango de "a" a "z"+def // cualquiera de los caracteres incluidos
+/[^def]def/ [^ ] -> not include
+/ab*c/ -> el * después de "b" significa "0 o más apariciones del elemento anterior". En la cadena "cbbabbbbcdebc"
+/verde|roja/ -> verde O roja
 
 OBJETOS:
 // Para crear una propiedad nueva, simplemente asignarla un valor:
