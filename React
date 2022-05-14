@@ -76,7 +76,7 @@ Element.propTypes = {
 ------
 ***Flux
 getActions().functionAction(); // usar Actions dentro de Actions
-setStore(); // setear el valor de una variable
+setStore(); // setear el valor de una variable (solo se puede hacer dentro de actions)
 getStore().variable // utilizar una variable dentro de un Action
 setStore({variable: valor})
 
