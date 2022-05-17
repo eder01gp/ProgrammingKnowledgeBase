@@ -4,6 +4,11 @@ str()
 int()
 float()
 type(var)
+
+//math
+2 ** 3 -> 2^3
+6 % 2   -> resto
+
 //Listas
 variable = []
 variable.append("x")
