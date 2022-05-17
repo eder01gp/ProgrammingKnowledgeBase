@@ -1,0 +1,12 @@
+True
+//cast
+str()
+int()
+float()
+type(var)
+//Listas
+variable = []
+variable.append("x")
+print(variable)
+//Objeto
+obj = {Name=Yo, Age=12}
