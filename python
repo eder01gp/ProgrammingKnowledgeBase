@@ -13,5 +13,5 @@ type(var)
 variable = []
 variable.append("x")
 print(variable)
-//Objeto
+//Diccionario
 obj = {Name=Yo, Age=12}
