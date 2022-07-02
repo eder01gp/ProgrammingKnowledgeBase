@@ -12,6 +12,8 @@ style={{color: "red"}}
 setTimeot(()=>{}, 2000)
 ---------------------------------------------------------
 
+***Como mezclar variables con strings:
+const url = `https://example.com/${path}/${id}`;
 
 ***(Como usar ReactDOM.render)
 // WHAT: This variable returns contains the html to render
