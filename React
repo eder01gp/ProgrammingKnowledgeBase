@@ -13,7 +13,10 @@ setTimeot(()=>{}, 2000)
 ---------------------------------------------------------
 
 ***Como mezclar variables con strings:
-const url = `https://example.com/${path}/${id}`;
+en código:
+	const url = `https://example.com/${path}/${id}`;
+en html: 
+	data-bs-target={"#staticBackdrop"+document.id}
 
 ***(Como usar ReactDOM.render)
 // WHAT: This variable returns contains the html to render
