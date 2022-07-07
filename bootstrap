@@ -1,3 +1,10 @@
+// como hacer todas las cards de la misma altura cuando estan en la misma fila:
+cerar un grid de row y columns. Dentro de las columns metemos las cards y añadimos:
+className:"h-100"
+o en CSS: height:100%
+
+
+____________________________
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 //shorcut:
