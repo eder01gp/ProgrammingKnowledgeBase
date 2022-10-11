@@ -32,10 +32,34 @@ Note: The git push -u command is equivalent to -set-upstream. The -u flag is use
 As you push local branch with git push -u option, that local branch is linked with the remote branch automatically. The advantage is, you may use git pull without any arguments.
 
 //CMD
+CONTROL+A - Va al inicio de la linea
+CONTROL+E - Va al final de la linea
+CONTROL+C - Te saltas
+CONTROL+L - Borra la pantalla
+
+// Shorcuts
+To cancel a command that is being executed, press Control+C
+To autocomplete a file or folder name, use the tab key.
+To repeat any command you have used in the past, use the up arrow and it will show you each command, one by one.
+To go to the home user folder, use the ~ key like this: cd ~
+Use the clear command to "clean" the current console (it is just a scroll, but a very useful one).
+
+
+Donde estamos?
+pwd
+
+Manual command
+man ls 
+#te muestra el manual de las instruccion
+
 The list command
 ls -l ./applications
 #show the files and folder inside "appications" 
 #the -l is for asking a more detailed output information on the files.
+#the -p shows a "/" in the folder types.
+#the -la shows hidden docs
+
+tr #para transformar la salida
 
 The change directory command
 cd /path/to/directory
@@ -46,6 +70,9 @@ mv /path/to/file.txt /math/to/destination/file.txt
 The remove command
 rm file1.txt file2.txt file3.txt file4.txt
 #removes all the four files 
+
+rmdir folder
+#te borra el folder con nombre folder
 
 The rm command
 The remove command
@@ -90,12 +117,15 @@ echo hello world #print on the console
 pwd #shows the current directory
 echo* #shows the files on the current directory
 cat *.txt #shows the content of the file you choose
+cat -e #shows saltos de linea con $
 
 Print the last 5 lines of "access.log".
 tail -5 *
 
 Create an empty file named take-the-command-challenge in the current working directory.
 >take-the-command-challenge
+
+touch test #crea un archivo #-t cambia las fechas del archivo (modficacion)
 
 Create a directory named tmp/files in the current working directory
 Hint: The directory "tmp/" doesn't exist, with one command you need to create both "tmp/" and "tmp/files"
@@ -104,9 +134,6 @@ mkdir -p tmp/files
 Usar " | xargs " para pasar algo como variables.
 Ejemplo: comando que queremos pasar | xargs comando al cual aplicamos la variable resultante de antes.
 
-// Shorcuts
-To cancel a command that is being executed, press Control+C
-To autocomplete a file or folder name, use the tab key.
-To repeat any command you have used in the past, use the up arrow and it will show you each command, one by one.
-To go to the home user folder, use the ~ key like this: cd ~
-Use the clear command to "clean" the current console (it is just a scroll, but a very useful one).
+//Crear variables
+variable=nombre-variable
+
