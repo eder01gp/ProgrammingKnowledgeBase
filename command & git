@@ -45,6 +45,8 @@ To go to the home user folder, use the ~ key like this: cd ~
 Use the clear command to "clean" the current console (it is just a scroll, but a very useful one).
 
 
+tar -xf nombreArchivo
+
 Donde estamos?
 pwd
 
