@@ -61,9 +61,11 @@ tar -xf nombreArchivo // descomprimir
 Donde estamos?
 pwd
 
-Manual command
+//Manual command
 man ls 
-#te muestra el manual de las instruccion
+#te muestra el manual de las instrucción
+q #para salir
+/ #para buscar. #volver a usar / para moverse por las busquedas
 
 The list command
 ls -l ./applications
