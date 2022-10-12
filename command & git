@@ -47,6 +47,8 @@ Use the clear command to "clean" the current console (it is just a scroll, but a
 //variables
 definir variable:
 nombreVariable = valorVariable
+env ##variables de entorno
+export nombreVariable ## envia variable al entorno
 
 llamar valor variable:
 $valorVariable
