@@ -60,9 +60,10 @@ tar -xf nombreArchivo // descomprimir
 
 //SALIDAS
 > ## redirige la salida a un archivo
+>> ## añadir al contenido del archivo
 2> ## redirige la salida de error a un archivo
-| redirige la salida a otro comando
-
+| ## redirige la salida a otro comando
+<< ## marca una palabra clave como seña para FIN    
 
 Donde estamos?
 pwd
