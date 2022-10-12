@@ -44,8 +44,17 @@ To repeat any command you have used in the past, use the up arrow and it will sh
 To go to the home user folder, use the ~ key like this: cd ~
 Use the clear command to "clean" the current console (it is just a scroll, but a very useful one).
 
+//variables
+definir variable:
+nombreVariable = valorVariable
 
-tar -xf nombreArchivo
+llamar valor variable:
+$valorVariable
+
+exportar variable al entorno:
+export nombreVariable
+
+tar -xf nombreArchivo // descomprimir
 
 Donde estamos?
 pwd
