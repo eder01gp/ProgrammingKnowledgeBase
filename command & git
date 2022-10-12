@@ -58,6 +58,12 @@ export nombreVariable
 
 tar -xf nombreArchivo // descomprimir
 
+//SALIDAS
+> ## redirige la salida a un archivo
+2> ## redirige la salida de error a un archivo
+| redirige la salida a otro comando
+
+
 Donde estamos?
 pwd
 
